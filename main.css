@@ -1,0 +1,80 @@
+/*Notes on main.css
+This file is the main style sheet, 
+it is included in every project to keep the consistent format to all the different pages.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: Verdana;
+    
+}
+
+
+header {
+    background-color: #8ed8eb;
+    padding: 15px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    bottom: 125px;
+    overflow-y: scroll;
+    
+}
+
+nav a {
+    background-color: #dbd8d8;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+} 
+
+article {
+    float: right;
+    width: 79%;
+    padding-bottom: 130px;
+    position: fixed;
+    top: 120px;
+    bottom: 125px;
+    right: 0px;
+    overflow-y: auto;
+}
+
+#main-title {
+    position: relative;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    color: black;
+    letter-spacing: .2em;
+    font-size: 50px;
+    margin-top: 60px;
+}
+footer {
+    background-color: #8ed8eb;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.intro {
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+}
