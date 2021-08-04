@@ -1,0 +1,77 @@
+/*Styles for the menu*/
+body{
+    overflow: auto;
+    /*This page is too small, so this has no effect*/
+}
+
+.nav-bar-icon {
+    /*style for the nav bar icon*/
+    position: fixed;
+    top: 0;
+    font-size: 35px;
+}
+
+.nav-bar-icon:hover {
+    /*change the pointer to let the user know that there is an interaction*/
+    cursor: pointer;
+}
+
+article {
+    /*initial body dimensions*/
+    width: 100%;
+    padding-left: 25px;
+}
+
+nav {
+    /*hide the nav bar when the page is loaded*/
+    display: none;
+}
+/*end of styles for the menu*/
+/*Don't use the overflow or it will move the screen when we are playing*/
+article {
+    overflow: hidden;
+}
+/*Styles for canvas*/
+#canvasOutput {
+    border: solid 1px;
+    background-color: rgb(207, 207, 207);
+    
+}
+
+/*Score and other useful tags*/
+.div-canvas {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.div-score {
+    width: 50%;
+    height: 205px;
+    float: right;
+    
+    text-align: center;
+    vertical-align: middle;
+    display: inline;
+    margin-bottom: 30px;
+}
+.div-score p {
+    width: 100%;
+    display: inline;
+}
+
+.score-size {
+    font-size: 30px;
+}
+
+.info {
+    text-align: center;
+}
+.how-to {
+    display: inline;
+}
+.how-to-play:hover {
+    cursor: pointer;
+    background-color: rgb(125, 179, 248);
+}

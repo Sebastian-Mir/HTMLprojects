@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Counter</title>
+            <link href="../../main.css" type="text/css" rel="stylesheet" />
+            <link href="counter.css" type="text/css" rel="stylesheet" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--Notes on counter
+        This is a simple program with 3 buttons that manage a counter.
+        It contains 3 functions:
+
+        -decrease (decreaseCount function) decreases the count by 1
+            if the count is negative then the color changes to red
+        
+        -reset (resetCount function) resets the count to 0 with color black
+        
+        -and increase (increaseCount function) increases the count by 1
+            if the count is positive, the color changes to green
+        -->
+        <header><h1>HTML, CSS, JavaScript projects</h1></header>
+        
+        <nav></nav>
+        <article>
+            <h2 id="main-title">Counter</h2>
+            <h1 id="counter-number">0</h1>
+            <div id="div-controls">
+                <button onclick="decreaseCount()" class="btn-control" id="btn-decrease">DECREASE</button>
+                <button onclick="resetCount()" class="btn-control" id="btn-reset">RESET</button>
+                <button onclick="increaseCount()" class="btn-control" id="btn-increase">INCREASE</button>
+            </div>
+        </article>
+    
+        <footer></footer>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    <script src="counter.js"></script>
+</html>

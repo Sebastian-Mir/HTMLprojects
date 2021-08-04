@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keyboard input</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="keyboard.css" type="text/css" rel="stylesheet" />
+        <link href="keyboardModal.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <p class="nav-bar-icon" onclick="displayMenu()">&#9776;</p>
+            <h1>Keyboard input</h2></header>
+        <nav></nav>
+        <article>
+            <h2 id="main-title">Snake Game</h2>
+            <br />
+            <div class="div-canvas">
+                <canvas id="canvasOutput" width="200" height="200"></canvas> 
+            </div>
+            <div class="div-score">                             
+                <p class="score-size">Current direction: </p>
+                <p id="direction" class="score-size">&#9193;</p>
+                <br />
+                <br /><br />
+                <p class="score-size">Score: </p><p class="score-size" id="score"></p>
+                
+            </div>
+            
+            <div class="info">
+                <p class="how-to">How to play: </p>
+                <p class="how-to how-to-play" onclick="document.getElementById('modal-how-to').style.display='block'">&#128270;</p>
+            </div>
+            
+
+        </article>
+        <footer></footer>
+        <div id="modal-how-to">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <svg class="control" id="left" onclick="changeModal('prev')" width="50" height="50">
+                        <polygon points="35,5 5,25 35,45 45,45 15,25 45,5" 
+                        style="fill:black;" />
+                    </svg>                    
+                    <h3 id="credits">How to play.</h3> 
+                    <svg class="control" id="right" onclick="changeModal('next')" width="50" height="50">
+                        <polygon points="5,5 15,5 45,25 15,45 5,45 35,25" 
+                        style="fill:black;" />
+                    </svg>                   
+                </div>
+                <div class="modal-body" id="body-1">
+                    <br />
+                    <p id="about">1. About the snake game</p>
+                    <p>The game starts as soon as the page is loaded</p>                
+                    <p>Use the keyboard arrows to move the snake</p>
+                    <p>Guide the snake to the Food object (green single square).</p>
+                    <p>You can go across the walls</p>
+                    <br />
+                    <p>Have fun.</p>
+                </div>
+                <div class="modal-body"  id="body-2">
+                    <br />
+                    <p id="about">2. About the direction</p>
+                    <p>When you press a direction key, the direction will change in the next move</p>                
+                    <p>You can observe the current direction with the emojis on the main screen</p>
+                    <p>Example &#9193;, &#9194;, &#9195; or &#9196;</p>
+                    <br />
+                    <p>Do your best.</p>
+                </div>
+                <div class="modal-body"  id="body-3">
+                    <br />
+                    <p id="about">3. About the score</p>
+                    <p>Eating each snake food will give you 1 point</p>                
+                    <p>The snake will also grow in size by 1</p>
+                    <p>The game ends when you eat yourself</p>
+                    <p>when this happens, the score and the snake will</p>
+                    <p>reset to 0 and the snake size of 5</p>
+                    <br />
+                    <p>Good luck.</p>
+                </div>
+                <div class="modal-footer">
+                    <p id="close" class="control" onclick="document.getElementById('modal-how-to').style.display='none'">Close &#10060;</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="keyboardModal.js"></script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F.A.Q.</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="faq.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Frequently Asked Questions
+            </h1>
+        </header>
+        <nav></nav>
+        <article>
+            <h2 id="main-title">F.A.Q.</h2>
+            <!--FAQ section. How to:
+            To add a new question, we need: 
+                div.faq.border to define the dimensions of the square and hold the questiona and answer
+                    div.faq-header that defines the header properties and contains the header elements
+                        p.question with the question text and style
+                        p.faq-display.border which acts as a display button and gives style to it
+                    div.faq-body defines the body style and dimensions
+                        hr line to divide the header and body (looks good)
+                        p answer to the FAQ
+            -->
+            <!--Question about page purpose-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: What is the purpose of this website?</p>
+                    
+                    <p class="faq-display border" id="purpose">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-purpose">
+                    <hr />
+                    <p>
+                        A: To show some HTML, CSS, and JavaScript programming skills that might be usefull while 
+                        creating other pages.
+                    </p>
+                </div>
+            </div>
+            <!--Question about information-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: Does this page stores any of my personal information?</p>
+                    
+                    <p class="faq-display border" id="personal-info">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-personal-info">
+                    <hr />
+                    <p>
+                        A: NO. This page is intended only to test and display functionalities for HTML, JavaScript, and CSS, so no information is stored.
+                        <br /><br />Feel free to play with the page and have fun (I will include some simple games).
+                    </p>
+                </div>
+            </div>
+            <!--Question about programming languages-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: Does this page only uses HTML, CSS and JavaScript?</p>
+                    
+                    <p class="faq-display border" id="language">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-language">
+                    <hr />
+                    <p>
+                        A: NO. Those are the main languages used, 
+                        but some other libraries are also included like JQuery which is used for the unified navigation bar.
+                    </p>
+                </div>
+            </div>
+            <!--Question about the idea-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: Is this an original idea?</p>
+                    
+                    <p class="faq-display border" id="credits">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-credits">
+                    <hr />
+                    <p>
+                        A: No, as shown in the Footer, these programs are based on 
+                        <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp's</a> post named: 
+                        <a href="https://www.freecodecamp.org/news/javascript-projects-for-beginners/" target="_blank">JavaScript Projects for Beginners</a>
+                        <br /><br />Nevertheless, I decided to put it all together to simulate a page with multiple sections and functionalities
+                        while dealing with a large file organization.
+                        
+                    </p>
+                </div>
+            </div>
+            <!--Question about code-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: Can I copy the code from this page?</p>
+                    
+                    <p class="faq-display border" id="copy-code">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-copy-code">
+                    <hr />
+                    <p>
+                        A: Yes you can. If any of the functionalities of this page can be useful to you, 
+                        then feel free to take it as a reference. 
+                        <br /><br />Do NOT forget that some (free) outsource resources could be included in this page, 
+                        so don't forget to also copy the references or credits for the author(s).
+                    </p>
+                </div>
+            </div>
+            <!--Question about final version-->
+            <div class="faq border">
+                <div class="faq-header">
+                    <p class="faq-question">Q: Is this the final version?</p>
+                    
+                    <p class="faq-display border" id="version">+</p>
+                </div>
+                
+                <div class="faq-body" id="answer-version">
+                    <hr />
+                    <p>
+                        A: NO, I will slowly add more interesting programs as soon as I finish them.
+                        <br /><br />If it gets too long, I might split it into different projects.
+                    </p>
+                </div>
+            </div>
+            
+        </article>
+        <footer></footer>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    <script src="faq.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Simple Flipper</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="assetsCSS/flipper.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--The HTML and CSS for simple and hex are almost the same.
+        Check the hex.html file for information about this file structure and style
+        Check assetsJs/simple.js for information about the functions.
+    -->
+        <header><h1>HTML, CSS, JavaScript projects</h1></header>    
+        <nav></nav>
+        <article id="main">
+
+            <h2 id="main-title">Background Flipper</h2>
+
+            <div class="flipper-links">
+                <a href="simple.html" class="flipper-type">Simple</a>
+                <a href="hex.html" class="flipper-type">Hex</a>
+            </div>
+
+            <div id="div-background">
+                <p class="p-background">Background color : </p>
+                <p class="p-background" id="p-color-change">Cyan</p>
+            </div>
+
+            <button id="btn-flipper" onclick="randomSimple()">Click me to Flip the Background</button>
+            
+        </article>
+        
+        <footer></footer>
+    </body>
+    
+    <script src="../../assets/nav.js"></script>
+    <script src="assetsJs/simple.js"></script>
+</html>

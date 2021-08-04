@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation Bar</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="navBar.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--in case we need more space for the page, we can use a button to hide or display the menu-->
+        <header>
+            <!--This p class=nav-bar-icon is used to hide or display the menu-->
+            <p class="nav-bar-icon" onclick="displayMenu()">&#9776;</p>
+            <h1>&#8592; Hide or display nav bar</h1>
+        </header>
+        <!--The navigation bar is not displayed from the beggining
+        check navBar.css-->
+        <nav></nav>
+
+        <article id="main">
+            <h2 id="main-title">Different type of menu</h2>
+            <br /><br />
+            <p>This page was created to show a simple but different type of layout for a webpage.</p>
+            <br />
+            <p>Press the &#9776; icon on the left-top corner to display or hide the menu.</p>
+        </article>
+        
+        <footer></footer>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    <script src="navBar.js"></script>
+</html>

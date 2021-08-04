@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitten Slideshow</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="slideshow.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--Example of a slideshow.
+        Press the arrows under the Cat image to change the pictures.
+        Press the credits button to open the credits modal
+        -->
+        <header>
+            <h1>
+                Slideshow
+            </h1>
+        </header>
+        <nav></nav>
+        <article>
+            <h2 id="main-title">Kitten Slideshow</h2>
+            <div id="slideshow">
+                <!--The slideshow is a div element with an img inside-->
+                <div class="slideshow-content">
+                    <img id="slideshow-box" src="https://images.unsplash.com/photo-1493548578639-b0c241186eb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" />
+                </div>
+                <!--The controls are SVG or Scalable Vector Graphics-->
+                <div class="slideshow-controls">
+                    <svg class="control" id="left" onclick="changeImage('prev')" width="50" height="50">
+                        <polygon points="35,5 5,25 35,45 45,45 15,25 45,5" 
+                        style="fill:black;" />
+                    </svg>
+                    <p id="modal-trigger" class="control"
+                    onclick="document.getElementById('modal-credits').style.display='block'"
+                    >Credits</p>
+                    <svg class="control" id="right" onclick="changeImage('next')" width="50" height="50">
+                        <polygon points="5,5 15,5 45,25 15,45 5,45 35,25" 
+                        style="fill:black;" />
+                    </svg>
+                </div>
+            </div>
+        </article>
+        <footer></footer>
+
+        <!--Modal with the credits
+        For more info, check the modal page-->
+
+        <div id="modal-credits">
+            <div class="modal-container">
+                <div class="modal-header">
+                    
+                    <h3 id="close" onclick="document.getElementById('modal-credits').style.display='none'" class="control">&times;</h3>
+                    <h3 id="credits">Credits</h3>
+                    
+                </div>
+                <div class="modal-body">
+                    <p>Links to the original images:</p>
+                    <a href="https://unsplash.com/photos/QTe-MHNUrz4" target="_blank">Original Image 1</a><br />
+                    <a href="https://unsplash.com/photos/Qsi0fWB8s6g" target="_blank">Original Image 2</a><br />
+                    <a href="https://unsplash.com/photos/T0kalkwgc0w" target="_blank">Original Image 3</a>
+                </div>
+                <div class="modal-footer">
+                    <p>For more images visit the authors page:<br /> <a href="https://unsplash.com/@ejleusink" target="_blank">Erick-Jan Leusink @ unsplash.com</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    <script src="slideshow.js"></script>
+</html>

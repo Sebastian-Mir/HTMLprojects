@@ -1,0 +1,26 @@
+body{
+    overflow: auto;
+    /*This page is too small, so this has no effect*/
+}
+.nav-bar-icon {
+    /*style for the nav bar icon*/
+    position: fixed;
+    top: 0;
+    font-size: 35px;
+}
+
+article {
+    /*initial body dimensions*/
+    width: 100%;
+    padding-left: 25px;
+}
+
+.nav-bar-icon:hover {
+    /*change the pointer to let the user know that there is an interaction*/
+    cursor: pointer;
+}
+
+nav {
+    /*hide the nav bar when the page is loaded*/
+    display: none;
+}

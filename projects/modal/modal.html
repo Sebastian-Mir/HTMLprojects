@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal Example</title>
+        <link href="../../main.css" type="text/css" rel="stylesheet" />
+        <link href="modal.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--This program is a simple modal example which displays the credits
+        By pressing the world button, a modal screen is displayed on top with the image source and credits
+        -->
+        <header>
+            <h1>More amazing images at &#8594; 
+                <p class="images-link pointer" onclick="document.getElementById('modal-credits').style.display='block'">&#127758;</p>
+            </h1>
+        </header>
+        <div>
+            <nav></nav>
+            <article>
+                <h2 id="main-title">Click the &#127758; icon on the header.</h2>
+            </article>
+        </div>
+        <footer></footer>
+        <!--This is the modal for the credits
+        The structure goes as follow:
+        
+        div.modal-credits is the container for the whole modal 
+        including the gray part that covers the browser
+            modal-container is the container for the information 
+            (modal-header, modal-body, and modal-footer)
+                modal-header contains the modal title and the close button
+
+                modal-body includes the credits information
+
+                modal-footer includes the root page where the images were obtained
+
+        -->
+        <div id="modal-credits">
+            <div class="modal-container">
+                <div class="modal-header">
+                    
+                    <h3 id="close" onclick="document.getElementById('modal-credits').style.display='none'" class="close-modal pointer">&times;</h3>
+                    <h3 id="credits" class="close-modal">Credits</h3>
+                    
+                </div>
+                <div class="modal-body">
+                    <p>Credits to:</p>
+                    <a href="https://unsplash.com/photos/Fpqx6GGXfXs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">clement fusil @ unsplash</a>
+                </div>
+                <div class="modal-footer">
+                    <p>For more images visit: <a href="https://unsplash.com" target="_blank">unsplash.com</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../assets/nav.js"></script>
+    
+</html>

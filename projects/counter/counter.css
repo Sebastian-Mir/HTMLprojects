@@ -1,0 +1,40 @@
+/*Initializes the count style*/
+#counter-number {
+    color: black;
+    font-size:70px;
+    display: block;
+    position: relative;
+    text-align: center;
+    
+}
+/*Controls style section*/
+#div-controls {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn-control {
+    border: 2px solid;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.btn-control:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+/*changes the color of the buttons when they are pressed*/
+#btn-decrease:active {
+    background-color: red;
+}
+
+#btn-increase:active {
+    background-color: green;
+}
+
+#btn-reset:active {
+    background-color: gray;
+}
